@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {}
+
+        body {}
+
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+
+        .container2 {
+            margin: auto;
+            width: 1300px;
+        }
+
+        .homeimage {
+            width: 100%;
+            height: calc(100vh - 10vh);
+            /* Navbar yüksekliğini çıkarır */
+            overflow: hidden;
+            /* Gerektiğinde taşan içerikleri gizler */
+        }
+
+        .portfolio-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .client-photo img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .team img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .home-image img{
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .worldmap {
+            background-image: url(Images/worldmap.jpg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /*
+        .contact {
+            background-image: url(Images/worldmap.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 10;
+        }
+        */
+    </style>
+
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg bg-black fixed-top" style="min-height: 10vh;">
+        <div class="container">
+            <a class="navbar-brand text-white d-flex align-items-center gap-4" href="#page-top"><img
+                    src="Images/logo.png" style="width: 3rem; height: 3rem;" alt="...">HoneyCraft Innovations</a>
+            <button class="navbar-toggler collapsed bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                MENU
+                <svg class="svg-inline--fa fa-bars fa-w-14 ms-1" aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                    data-fa-i2svg="" style="width: 2rem;">
+                    <path fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarResponsive" style="">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link active text-white" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#clients">Clients</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <section class="home">
+
+    </section>
+
+    <!-- NAVBAR END -->
+
+    <!-- HOME SECTION START -->
+
+    <section class="page-section d-flex justify-content-between align-items-center" style="min-height: 100vh;"
+        id="home">
+
+        <div class="container-fluid d-flex justify-content-evenly flex-wrap">
+            <div class="card home-image h-100">
+                <img src="Images/homeimage.webp" class="card-img" alt="...">
+            </div>
+
+            <div class="card" style="width: 700px;">
+                <div class="card-body p-5">
+                    <h5 class="card-title fs-1 fw-bolder py-3">CREATIVE SOLUTIONS</h5>
+                    <p class="card-text fs-4 py-2 fw-light">This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="#"
+                        class="btn bg-white btn-close-white mt-5 border border-0 rounded-5 d-flex justify-content-center align-items-center"
+                        style="width: 13rem; height: 3rem; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+        <div class="card mb-3 mx-5">
+            <div class="row g-0">
+                <div class="col-md-12 col-lg-4">
+                    <img src="Images/homeimage.webp" style="width: 100%;" class="h-auto rounded-start" alt="...">
+                </div>
+                <div class="col-md-12 col-lg-8 p-5">
+                    <div class="card-body">
+                        <h5 class="card-title fs-1 fw-bolder py-3">CREATIVE SOLUTIONS</h5>
+                        <p class="card-text fs-4 py-2 fw-light">This is a wider card with supporting text below as a natural
+                            lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#"
+                            class="btn bg-white btn-close-white mt-5 border border-0 rounded-5 d-flex justify-content-center align-items-center"
+                            style="width: 13rem; height: 3rem; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+
+
+
+
+
+        <!--
+        <div class="container-fluid container3 d-flex justify-content-evenly align-items-center flex-wrap">
+            <div class="card main-card w-50" style="padding-top: 3rem; height: 70vh;">
+                <div class="card-body">
+                    <h5 class="card-title pt-5 ps-5" style="font-size: 5rem; letter-spacing: 0.6rem;"><span
+                            class="title-creative fw-bold">CREATIVE</span> <span
+                            class="title-solutions fw-light">SOLUTIONS</span></h5>
+                    <p class="card-text ps-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint
+                        ut nobis aut, exercitationem iure esse.</p>
+                    <a href="#"
+                        class="btn bg-white btn-close-white m-5 border border-0 rounded-5 d-flex justify-content-center align-items-center"
+                        style="width: 13rem; height: 3rem; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">LEARN
+                        MORE</a>
+                </div>
+            </div>
+
+            <img class="home-image border rounded-2 d-xl-block order-first" src="Images/homeimage.jpg" alt=""
+                style="height: 70vh">
+        </div>
+-->
+
+
+
+
+
+        <!--
+        <div class="card border border-black">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="card-body border border-black">
+                  <h5 class="card-title pt-5 ps-5" style="font-size: 5rem; letter-spacing: 0.6rem;"><span style="font-weight: 700;">CREATIVE</span> <span style="font-weight: 200;">SOLUTIONS</span></h5>
+                  <p class="card-text ps-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint
+                    ut nobis aut, exercitationem iure esse</p>
+                  <a href="#"
+                        class="btn bg-white btn-close-white m-5 border rounded-5 d-flex justify-content-center align-items-center"
+                        style="width: 13rem; height: 3rem; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">LEARN
+                        MORE</a>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex justify-content-center">
+                <img src="Images/homeimage.jpg" class="img-fluid w-75" alt="...">
+              </div>
+            </div>
+          </div>
+-->
+    </section>
+
+    <!-- HOME SECTION END -->
+
+
+    <!-- SERVICES SECTION START -->
+
+    <section class="page-section" id="services" style="min-height: 100vh;">
+        <div class="container-fluid" style="min-height: 100vh; background-color: rgba(46, 46, 46, 0.074);">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="height: 20vh;">
+                <p style="font-size: 50px; margin-top: 15vh;">SERVICES</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-lg-3 g-4 mx-5 mt-1">
+                <div class="col">
+                    <div class="card h-100 d-flex flex-column justify-content-center align-items-center"
+                        style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                        <img src="Images/webdev.jpg" class="card-img-top w-75" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title px-3">Web Development</h5>
+                            <p class="card-text px-3" style="text-align: justify;">We specialize in crafting dynamic and
+                                user-friendly websites that
+                                engage your audience and drive results. From responsive design to e-commerce solutions,
+                                we create digital experiences that leave a lasting impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 d-flex flex-column justify-content-center align-items-center"
+                        style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                        <img src="Images/digitalmarketing.jpg" class="card-img-top w-75" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title px-3">Digital Marketing</h5>
+                            <p class="card-text px-3" style="text-align: justify;">Our digital marketing strategies are
+                                tailored to your brand's unique
+                                needs. With a focus on SEO, social media, and content marketing, we boost your online
+                                presence and help you connect with your target audience effectively.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 d-flex flex-column justify-content-center align-items-center"
+                        style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                        <img src="Images/brand.jpg" class="card-img-top w-75" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title px-3">Brand Strategy</h5>
+                            <p class="card-text px-3" style="text-align: justify;">Elevate your brand's identity with
+                                our comprehensive brand strategy
+                                services. From logo design to storytelling, we help you create a compelling narrative
+                                that resonates with your audience, fostering brand loyalty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION END -->
+
+
+    <!-- PORTFOLIO SECTION START -->
+
+    <section class="page-section" id="portfolio" style="min-height: 150vh;">
+
+        <div class="container-fluid">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="height: 20vh;">
+                <p style="font-size: 50px; margin-top: 15vh;">PORTFOLIO</p>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 mx-5 mt-1">
+            <div class="col">
+                <div class="card portfolio-card h-100">
+                    <img src="Images/1.webp" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: rgba(46, 46, 46, 0.074);">
+                        <h5 class="card-title px-3">E-Commerce Redesign</h5>
+                        <p class="card-text px-3">Revamped the experience of a prominent e-commerce platform, leading to
+                            a 30% increase in conversions. Developed a responsive design, streamlined the checkout
+                            process, and integrated personalized recommendations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card portfolio-card h-100">
+                    <img src="Images/2.webp" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: rgba(46, 46, 46, 0.074);">
+                        <h5 class="card-title px-3">Corporate Branding</h5>
+                        <p class="card-text px-3">Transformed a dynamic startup's brand identity with a unique fresh
+                            logo design, color palette, and visual guidelines. The cohesive branding strategy helped the
+                            company establish a strong presence and gain credibility in the market.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card portfolio-card h-100">
+                    <img src="Images/3.webp" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: rgba(46, 46, 46, 0.074);">
+                        <h5 class="card-title px-3">Social Media Campaign</h5>
+                        <p class="card-text px-3">Orchestrated a successful social media campaign that generated 50%
+                            more
+                            engagement than industry averages. Leveraged strategic content, influencer partnerships, and
+                            data-driven targeting to boost brand awareness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card portfolio-card h-100">
+                    <img src="Images/4.webp" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: rgba(46, 46, 46, 0.074);">
+                        <h5 class="card-title px-3">Mobile App Development</h5>
+                        <p class="card-text px-3">Designed and developed a cross-platform mobile app that garnered
+                            100,000+
+                            downloads within the first month. The app's intuitive UI/UX and seamless functionality
+                            contributed to its rapid user adoption.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card portfolio-card h-100">
+                    <img src="Images/5.webp" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: rgba(46, 46, 46, 0.074);">
+                        <h5 class="card-title px-3">Website Revamp</h5>
+                        <p class="card-text px-3">Transformed a client's vision into reality, overhauling their website.
+                            Implemented modern design, optimized loading speed, and integrated a user-friendly content
+                            management system for effortless updates.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card portfolio-card h-100">
+                    <img src="Images/6.webp" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: rgba(46, 46, 46, 0.074);">
+                        <h5 class="card-title px-3">Content Marketing Strategy</h5>
+                        <p class="card-text px-3">Executed a content strategy that boosted organic website traffic by
+                            80% in
+                            six months. Curated impactful blog posts, e-books, and resonating video content for the
+                            target audience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION END -->
+
+
+    <!-- CLIENTS SECTION START -->
+
+    <section class="page-section" id="clients" style="min-height: 120vh; background-color: rgba(46, 46, 46, 0.074)">
+        <div class="container-fluid">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="height: 20vh;">
+                <p style="font-size: 50px; margin-top: 15vh;">CLIENTS</p>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4 mx-5 mt-1">
+            <div class="col">
+                <div class="client-photo card h-100">
+                    <img src="Images/nike.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike, Inc.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="client-photo card h-100">
+                    <img src="Images/nestle.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nestlé S.A</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="client-photo card h-100">
+                    <img src="Images/bmw.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bayerische Motoren Werke AG
+                            BMW</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="client-photo card h-100">
+                    <img src="Images/hilton.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hilton Worldwide</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="client-photo card h-100">
+                    <img src="Images/shell.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Dutch Shell</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="client-photo card h-100">
+                    <img src="Images/pwc.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PricewaterhouseCoopers International Limited PwC</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="client-photo card h-100">
+                    <img src="Images/heinz.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kraft Heinz Company</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="client-photo card h-100">
+                    <img src="Images/thenorth.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The North Face</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTS SECTION END -->
+
+
+    <!-- ABOUT SECTION START -->
+
+    <section class="page-section" id="about" style="min-height: 100vh;">
+        <div class="container-fluid">
+            <div class="mt-5 d-flex flex-column justify-content-center align-items-center" style="height: 20vh;">
+                <p style="font-size: 50px; margin-top: 15vh;">ABOUT</p>
+            </div>
+        </div>
+        <div class="card mx-auto mt-4" style="max-width: 80rem; background-color: rgba(46, 46, 46, 0.074);">
+            <div class="card-body p-5">
+                <p class="card-text">Welcome to our agency! At our core, we are driven by a rich history of creativity
+                    and innovation. Our journey began with a passion for crafting exceptional solutions that inspire and
+                    connect.</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary fw-bold">Mission:</h6>
+                <p class="card-text">Our mission is to empower brands and businesses with strategic insights and
+                    creative solutions. We believe in the transformative power of design, technology, and effective
+                    communication to drive growth and success.</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary fw-bold">Vision:</h6>
+                <p class="card-text">Our vision is to be a driving force behind the evolution of digital experiences. We
+                    strive to be at the forefront of innovation, setting new standards in design, development, and
+                    collaboration.</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary fw-bold">Expertise and Values:</h6>
+                <p class="card-text">With a team of dedicated experts, we specialize in turning ideas into reality. Our
+                    values of integrity, creativity, and collaboration guide us in every endeavor. We take pride in our
+                    ability to transform challenges into opportunities and ideas into impactful solutions.</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary fw-bold">Experience:</h6>
+                <p class="card-text">With years of hands-on experience, we've honed our skills across various industries
+                    and sectors. From branding to digital strategy, our diverse portfolio showcases our commitment to
+                    excellence and our passion for delivering outstanding results.</p>
+                <p class="card-text">We invite you to join us on this exciting journey. Explore our projects, connect
+                    with our team, and let's embark on a creative partnership that fuels growth and innovation.</p>
+                <p class="card-text">Thank you for considering us as your creative partner.</p>
+                <p class="card-text fst-italic">[Your Agency Name] Team</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION END -->
+
+
+    <!-- TEAM SECTION START -->
+
+    <section class="page-section" id="team" style="min-height: 100vh; background-color: rgba(46, 46, 46, 0.074);">
+        <div class="container-fluid">
+            <div class="mt-5 d-flex flex-column justify-content-center align-items-center" style="height: 20vh;">
+                <p style="font-size: 50px; margin-top: 15vh;">TEAM</p>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 mt-1">
+            <div class="col">
+                <div class="team card border-0 h-100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;">
+                    <img src="Images/ceyda.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ceyda Ersöz</h5>
+                        <p class="card-text">Lead Developer</p>
+                        <ul class="d-flex gap-2 list-unstyled">
+                            <li><a href="#"><img class="" src="Images/twitterblack.png" alt=""
+                                        style="width: 30px; height: 30px;"></a>
+                            </li>
+                            <li><a href="#"><img class="" src="Images/facebookblack.png" alt=""
+                                        style="width: 30px; height: 30px;"></a>
+                            </li>
+                            <li><a href="#"><img class="" src="Images/linkedinblack.png" alt=""
+                                        style="width: 30px; height: 30px;"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="team card border-0 h-100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;">
+                    <img src="Images/ceren.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ceren Ersöz</h5>
+                        <p class="card-text">Lead Marketer</p>
+                        <ul class="d-flex gap-2 list-unstyled">
+                            <li><a href="#"><img class="" src="Images/twitterblack.png" alt=""
+                                        style="width: 30px; height: 30px;"></a>
+                            </li>
+                            <li><a href="#"><img class="" src="Images/facebookblack.png" alt=""
+                                        style="width: 30px; height: 30px;"></a>
+                            </li>
+                            <li><a href="#"><img class="" src="Images/linkedinblack.png" alt=""
+                                        style="width: 30px; height: 30px;"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="team card border-0 h-100"
+                    style="box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;">
+                    <img src="Images/elif.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Elif Çavdar</h5>
+                        <p class="card-text">Business Development Lead</p>
+                        <ul class="d-flex gap-2 list-unstyled">
+                            <li><a href="#"><img class="" src="Images/twitterblack.png" alt=""
+                                        style="width: 30px; height: 30px;"></a>
+                            </li>
+                            <li><a href="#"><img class="" src="Images/facebookblack.png" alt=""
+                                        style="width: 30px; height: 30px;"></a>
+                            </li>
+                            <li><a href="#"><img class="" src="Images/linkedinblack.png" alt=""
+                                        style="width: 30px; height: 30px;"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION END -->
+
+
+    <!-- CONTACT SECTION START -->
+
+    <section class="page-section worldmap" id="contact" style="min-height:90vh;">
+        <div class="container-fluid">
+            <div class="mt-5 d-flex flex-column justify-content-center align-items-center" style="height: 20vh;">
+                <p style="font-size: 50px; margin-top: 15vh;">CONTACT US</p>
+            </div>
+
+            <div class="container border border-secondary rounded-4 mt-4"
+                style="background-color: rgba(46, 46, 46, 0.074);">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <form class="">
+                            <div class="">
+                                <label for="name" class="form-label"></label>
+                                <input type="text" class="form-control" id="name" name="name" required
+                                    placeholder="Your Name:">
+                            </div>
+                            <div class="">
+                                <label for="phone" class="form-label"></label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required
+                                    placeholder="Your Phone:">
+                            </div>
+                            <div class="">
+                                <label for="email" class="form-label"></label>
+                                <input type="email" class="form-control" id="email" name="email" required
+                                    placeholder="Your Email:">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="message" class="form-label"></label>
+                                <textarea class="form-control" id="message" name="message" rows="6" required
+                                    placeholder="Your Message:"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2 col-2 mx-auto mt-5 mb-5">
+                    <button class="btn btn-secondary bg-black opacity-75 border border-black" type="button">Send
+                        Message</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION END -->
+
+
+    <!-- FOOTER START -->
+    <footer class="d-flex flex-column justify-content-center bg-black" style="min-height: 10vh;">
+        <div class="d-flex justify-content-between align-items-center mx-5">
+            <div class="text-white">
+                Copyright © Your Website 2023
+            </div>
+            <div>
+                <ul class="d-flex align-items-center my-auto gap-2 list-unstyled">
+                    <li><a href="#"><img class="" src="Images/twitter.png" alt=""
+                                style="width: 40px; height: 40px;"></a>
+                    </li>
+                    <li><a href="#"><img class="" src="Images/facebook.png" alt=""
+                                style="width: 40px; height: 40px;"></a>
+                    </li>
+                    <li><a href="#"><img class="" src="Images/linkedin.png" alt=""
+                                style="width: 40px; height: 40px;"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex gap-3">
+                <a href="#" class="text-decoration-none text-black fw-light text-white">Privacy Policy</a>
+                <a href="#" class="text-decoration-none text-black fw-light text-white">Terms of Use</a>
+            </div>
+
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
